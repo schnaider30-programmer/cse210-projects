@@ -40,7 +40,7 @@ class Program
                 smallestPositive = number;
             }
         }
- b
+ 
         float average = total / ((float)numberList.Count);
 
         Console.WriteLine($"The total is {total}");
