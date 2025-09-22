@@ -1,3 +1,5 @@
+//The program can read scripture from a text file and randomly choose a line to display to the user
+
 using System;
 using System.IO;
 
