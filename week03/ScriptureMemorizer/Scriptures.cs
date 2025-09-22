@@ -4,12 +4,13 @@ using System.Globalization;
 
 public class Scriptures
 {
-    References _reference;
-    List<Word> _words = new List<Word>();
+    private References _reference;
+    private List<Word> _words = new List<Word>();
 
     public Scriptures(References references, string text)
     {
         _reference = references;
+
         foreach (string w in text.Split(' '))
         {
             Word newWord = new Word(w);
@@ -22,12 +23,10 @@ public class Scriptures
         Random randomIndex = new Random();
         int hiddenCount = 0;
 
-        // Any() is LINQ method to check if at leat one element is true.
-        //w => !w.IsHidden() is a lambda function that say to continue as long as there is the Word w visible. !w.IsHidden().
-
-        while (hiddenCount < numberToHide && _words.Any(w => !w.IsHidden()))
+        while (hiddenCount < numberToHide && !IsCompletyHidden())
         {
             int index = randomIndex.Next(_words.Count);
+
             if (!_words[index].IsHidden())
             {
                 _words[index].Hide();
@@ -54,3 +53,7 @@ public class Scriptures
         return true;
     }
 }
+
+ // _words.Any(w => !w.IsHidden())
+// Any() is LINQ method to check if at leat one element from the arguments passed is true.
+//w => !w.IsHidden() is a lambda function that say to continue as long as there is the Word object "w" visible. !w.IsHidden().

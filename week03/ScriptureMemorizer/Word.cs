@@ -26,7 +26,7 @@ public class Word
         _isHidden = false;
     }
 
-    //A getter to know the value of the attribute _isHidden
+    //A getter method to know the value of the attribute _isHidden
     public bool IsHidden()
     {
         return _isHidden;
