@@ -23,11 +23,13 @@ public class Video
 
         foreach (Comment comment in _comments)
         {
-            string eachComment = comment._text;
-            allComments += $"{i}-{eachComment}\n";
+            string eachCommentText = comment._text;
+            string eachCommenterName = comment._name;
+            allComments += $"{i}-{eachCommentText}\n";
+            allComments += $"From: {eachCommenterName}\n";
             i++;
         }
-        
-        return allComments;
+
+        return $"{new string('-', 50)}\n{allComments}";
     }
- }
+}

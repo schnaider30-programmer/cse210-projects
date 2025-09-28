@@ -3,8 +3,8 @@ using System.Net.Sockets;
 
 public class Customer
 {
-    string _customerName;
-    Address _address;
+    private string _customerName;
+    private Address _address;
 
     public Customer()
     {

@@ -3,10 +3,10 @@ using System.Runtime.CompilerServices;
 
 public class Address
 {
-    string _streetadress;
-    string _city;
-    string _state;
-    string _country;
+    private string _streetadress;
+    private string _city;
+    private string _state;
+    private string _country;
 
     public Address()
     {
