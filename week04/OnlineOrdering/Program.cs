@@ -42,20 +42,5 @@ class Program
             Console.WriteLine($"Product(s): \n{order.OrderPAckingLabel()}{new string('-', 40)}\nDeliver to: {order.OrderShippingLabel()} \n{new string('-', 40)}\nPrice: {order.TotalCostOfOrder()}$");
 
         }
-
-        // Console.WriteLine($"\n{new string('=', 50)}");
-
-        // Console.WriteLine($"Products: \n{order1.OrderPAckingLabel()}\n{new string('-', 40)}Deliver to: {order1.OrderShippingLabel()} \n{new string('-', 40)}\nPrice: {order1.TotalCostOfOrder()}$");
-
-        // Console.WriteLine($"{new string('=', 50)}");
-
-        // Console.WriteLine($"Products: {order2.OrderPAckingLabel()}\nDeliver to: {order2.OrderShippingLabel()} \nPrice: {order2.TotalCostOfOrder()}$");
-
-        // Console.WriteLine($"{new string('=', 50)}");
-
-        // Console.WriteLine($"Products: {order3.OrderPAckingLabel()} \nDeliver to: {order3.OrderShippingLabel()} \nPrice: {order3.TotalCostOfOrder()}$");
-
-        // Console.WriteLine($"\n{new string('=', 50)}");
-
     }
 }
