@@ -123,9 +123,10 @@ class Program
 
         for (int i = 0; i < _videos.Count(); i++)
         {
-            Console.WriteLine($"{i + 1}.Video Title: {_videos[i]._title}");
-            Console.WriteLine($"{i + 1}.Author: {_videos[i]._author}");
-            Console.WriteLine($"{i + 1}.Length: {_videos[i]._lengthInSecond}");
+            Console.WriteLine($"{new string('=', 50)}");
+            Console.WriteLine($"Video Title: {_videos[i]._title}");
+            Console.WriteLine($"Author: {_videos[i]._author}");
+            Console.WriteLine($"Length: {_videos[i]._lengthInSecond}s");
             Console.WriteLine($"Number of Comments: {_videos[i].GetNumberOfComments()}");
             Console.WriteLine("Comments:");
             Console.WriteLine(_videos[i].GetAllCommentsText().Trim('"'));
