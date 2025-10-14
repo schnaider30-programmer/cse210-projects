@@ -1,6 +1,5 @@
 using System;
 using System.Net;
-using Microsoft.Win32.SafeHandles;
 using System.IO;
 
 public class GoalManager
@@ -61,15 +60,12 @@ public class GoalManager
             }
 
         } while (choice != 6);
-
     }
 
     public void DisplayPlayerInfo()
     {
         Console.WriteLine($"You have {_score} points.");
         Console.WriteLine($"You are level {GetLevel()}\n");
-
-
     }
 
     public void ListGoalNames()
@@ -99,7 +95,6 @@ public class GoalManager
                 i++;
             }
         }
-
     }
 
     public void CreateGoal()
